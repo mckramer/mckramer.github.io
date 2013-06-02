@@ -58,3 +58,28 @@
 #work, #play, #study {
   border-bottom: 1px solid #dddddd;
 }
+
+.courses {
+  position: relative;
+  margin: 0 0 10px 10px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.courses:after {
+  content: "Courses";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #dddddd;
+  color: #9da0a4;
+  -webkit-border-radius: 0 4px 0 4px;
+     -moz-border-radius: 0 4px 0 4px;
+          border-radius: 0 4px 0 4px;
+}
