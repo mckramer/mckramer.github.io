@@ -1,0 +1,23 @@
+---
+layout: default
+title: "Posts - Max Kramer"
+tags: ["jquery", "$", "placeover"]
+---
+<h2>Posts <small>and news</small></h2>
+{% unless site.posts == empty %}
+  <h2></h2>
+  <div class="posts">
+    {% for post in site.posts limit:5 %}
+      <div class="media" style="margin-top: 10px; padding-top: 10px; border-top: 1px dotted #eeeeee;">
+        <div class="media-body">
+          <h4 class="media-heading"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <span class="label pull-right">{{ post.date | date_to_string }}</span>
+          {{ post.excerpt }}
+          <a href="{{ post.url }}">Continue reading.</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>There are no posts at the moment.  Check back soon.</p>
+{% endunless %}

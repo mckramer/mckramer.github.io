@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Max Kramer" />
+    
+    <!-- Syntax Highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/2.3.2/flatly/bootstrap.min.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+    
+  </head>
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <div class="row-fluid">
+        <div id="content" class="span9">
+          {{ content }}
+        </div>
+        <aside id="side-bar" class="span3">
+          <div id="social">
+            <h2>Social</h2>
+            <div class="btn-group btn-group-vertical btn-block" style="margin-bottom: 8px;">
+              <a class="btn btn-large-text" href="https://www.facebook.com/mckramer" target="_blank">
+                <i class="icon-facebook icon-large"></i>
+                mckramer
+              </a>
+              <a class="btn btn-large-text" href="https://github.com/mckramer" target="_blank">
+                <i class="icon-github icon-large"></i>
+                mckramer
+              </a>
+              <a class="btn btn-large-text" href="http://www.linkedin.com/in/mckramer" target="_blank">
+                <i class="icon-linkedin icon-large"></i>
+                mckramer
+              </a>
+              <a class="btn btn-large-text" href="https://twitter.com/maxckramer" target="_blank">
+                <i class="icon-twitter icon-large"></i>
+                @maxckramer
+              </a>
+            </ul>
+          </div>
+          <div id="ticker">
+            {% include twitter-widget.html %}
+          </div>
+        </aside>
+      </div>
+      {% include footer.html %}
+    </div>
+
+    <a href="https://github.com/mckramer/mckramer.github.io/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+#header {
+  background-image: url('/img/header-small.png');
+  background-repeat: no-repeat;
+  background-position: 20px 50%;
+  height: 165px;
+}
+#header h1 {
+  margin-top: 60px;
+  text-align: right;
+}
+#header .navbar {
+  margin-bottom: 0;
+}
+
+#social .btn {
+  text-align: left;
+}
+
+.btn-group > .btn-large-text {
+  font-size: 18.75px
+}
+
+.icon-large {
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin-right: 5px;
+}
+
+.icon-facebook {
+  background-image: url("/img/glyphicons_410_facebook.png");
+  background-position: 0 0;
+}
+.icon-github {
+  background-image: url("/img/glyphicons_401_github.png");
+  background-position: 0 0;
+}
+.icon-linkedin {
+  background-image: url("/img/glyphicons_397_linked_in.png");
+  background-position: 0 0;
+}
+.icon-twitter {
+  background-image: url("/img/glyphicons_411_twitter.png");
+  background-position: 0 0;
+}
+
+.nav-bordered > li > a {
+  border: 1px solid #e5e5e5;
+  margin-bottom: -1px;
+}
+.nav-bordered > li:first-child > a {
+  border-radius: 6px 6px 0 0;
+}
+.nav-bordered > li:last-child > a {
+  border-radius: 0 0 6px 6px;
+}
+
+#work, #play, #study {
+  border-bottom: 1px solid #dddddd;
+}

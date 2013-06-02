@@ -1,0 +1,30 @@
+---
+layout: default
+title: Max Kramer
+---
+<h2>A quick introduction</h2>
+<p>My name is Max Kramer. I graduated from the University of North Carolina at Chapel Hill as part of the Class of 2011 with a BS in Computer Science (and minors in Chemistry and Spanish). I currently work for a large financial services company as a Software Engineer in NC.</p>
+
+{% unless site.posts == empty %}
+  <h2>Recent posts</h2>
+  <table class="table">
+    <tbody>
+      {% for post in site.posts limit:5 %}
+        <tr>
+          <td>{{ post.date | date_to_string }}</td>
+          <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <a class="btn btn-small" href="/posts.html">View all posts</a>
+{% endunless %}
+
+<h2>Now what?</h2>
+<ul>
+  <li>Visit the social links on the right</li>
+  <li>Learn more <a href="/about.html">about me</a></li>
+  <li>Take a look at the <a href="/projects.html">projects</a> that I am working on</li>
+  <li>Get in <a href="/contact.html">contact</a> with me</li>
+  <li>View <a href="/resume.html">my resume</a></li>
+</ul>
