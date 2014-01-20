@@ -1,3 +1,3 @@
-# [Personal website](http://www.maxckramer.com)
+# Personal website
 
-Source for (maxckramer.com)[http://www.maxckramer.com]
+Source for [maxckramer.com](http://www.maxckramer.com).  Built using [Jekyll](http://jekyllrb.com/).
